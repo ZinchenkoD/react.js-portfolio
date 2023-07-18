@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fixel Text';
+}
+
+@font-face {
+    font-family: 'Fixel Text';
+    font-weight: bold;
+    src: local('Fixel Text'), url('./FixelText-Bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Fixel Text';
+    font-weight: medium;
+    src: local('Fixel Text'), url('./FixelText-Medium.ttf') format('ttf');
+}
+
+h2{
+    font-size: 40px;
+    color: #19A7CE;
+    line-height: 40px;
+    width: fit-content;
+}
+
+section{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+body{
+    background-color: #F6F1F1;
+}
+
+nav li{
+    display: inline-block;
+    position: relative;
+}
+
+nav li:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #19A7CE;
+    transform-origin: bottom right;
+    transition: transform 0.6s ease-out;
+}
+
+nav li:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
