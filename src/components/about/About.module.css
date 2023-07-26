@@ -4,6 +4,18 @@
     font-weight: 500;
 }
 
+.about__section{
+    max-width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+.about__section__content{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
 .about__text{
     font-size: 20px;
     font-weight: 500;
@@ -36,5 +48,5 @@
 }
 
 .h2{
-    margin: 60px auto;
+    margin: 0 auto 60px;
 }
